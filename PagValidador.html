@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
-    integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
-    integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"/>
+    
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
 
     <title>Validador de CPF</title>
     <link rel="icon" href="/imgsIcons/iconNav.svg">
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -37,19 +38,28 @@
 
             <div class="inputEresultado">
                 <div class="digiteCPF">
-                    <p>Digite o CPF</p>
-                    <input type="text" name="CPF" id="inputText" placeholder="XXX.XXX.XXX-XX">
+                    <label class="inputCustomizado">
+                        <input type="text" required>
+                        <span class="placeholder">Digite o CPF</span>
+                    </label>
+
                     <div class="resposta">
-                        <!--icon e resposta-->
-                        <i></i>
-                        <p></p>
+                        <!--icon e resposta
+                        -->
+                        
+                        <!--
+                        <p>CPF VÁLIDO</p>
+                        <span class="material-symbols-outlined">done_all</span>
+                        <span class="material-symbols-outlined">close</span>
+                        <p>CPF INVÁLIDO</p>
+                        -->
                     </div>
                 </div>
                 
 
                 <div class="btnValidar">
-                    <button>
-                        <i></i>
+                    <button type="button">
+                        <span class="material-symbols-outlined">task_alt</span>
                         <p>VALIDAR CPF</p>
                     </button>
                 </div>
@@ -59,13 +69,21 @@
     </section>
 
     
-    
     <footer style="border: solid 2px red;">
-        <div class="githubDiv">git</div>
-        <div class="linkedinDiv">linkedin</div>
+        <div class="githubDiv">
+            <i></i>
+            <p>GitHub</p>
+        </div>
+        <div class="linkedinDiv">
+            <i></i>
+            <p>
+                LinkedIn</p>
+        </div>
     </footer>
     
     
+
+
     
 </body>
 </html>

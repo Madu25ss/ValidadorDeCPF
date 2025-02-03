@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
 
+
 body {
     background-color: #cee2ff;
     font-family: "Kantumruy Pro", sans-serif;
@@ -33,7 +34,7 @@ body {
     height: 300px;
     width: 650px;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3); 
     padding: 1px;
 }
@@ -47,7 +48,7 @@ footer {
 /*conteudos*/
  .container .subtitulo{
     text-align: center;
-    color: rgba(0, 0, 0, 0.591);
+    color: rgba(0, 0, 0, 0.678);
 }
 
 .titulo {
@@ -68,14 +69,78 @@ hr {
     height: 100px;
 }
 
-.digiteCPF input {
-    width: 220px;
-    height: 30px;
+/*Estilizando o input*/
+.inputCustomizado {
+    position: relative;
+    padding-top: 20px;
+    margin-bottom: 5px;
 }
+
+.digiteCPF input {
+    appearance: none;
+    padding: 12px;
+    border-radius: 4px;
+    width: 250px;
+    outline: none;
+    font-size: 15px;
+    border: 2px solid #c6c6c6;
+    transition: border-color 0.3s ease;
+}
+
+
+.inputCustomizado .placeholder {
+    position: absolute;
+    left: 12px;
+    top: calc(70% + 10px);
+    transform: translateY(-100%);
+    color: #393939;
+    transition: 
+        top 0.3s ease,
+        font-size 0.3s ease,
+        color 0.3s ease;
+}
+
+.inputCustomizado input:valid,
+.inputCustomizado input:focus{
+   border-color: #474747; 
+   transition-delay: 0.1s;
+}
+
+.inputCustomizado input + .placeholder{
+    padding: 0 5px;
+}
+
+.inputCustomizado input:valid + .placeholder,
+.inputCustomizado input:focus + .placeholder{
+    top: 14px;
+    font-size: 12px;
+    background-color: #fff;
+}
+
 
 .resposta{
     font-weight: 500;
     display: inline-flex;
+    position: relative;
+    top: 14px;
+}
+
+.resposta p{
+    position: relative;
+    top: 6px;
+    margin-left: 4px;
+    font-size: 16px;
+    /*
+    color: #00cb07;
+    color: #ec0000;
+    */
+}
+
+.resposta span {
+    /*
+    color: #ec0000;
+    */  
+    margin-left: 2px;
 }
 
 .btnValidar {
@@ -83,16 +148,36 @@ hr {
     margin: 0 auto;
     margin-top: 80px;
 }
-
 .btnValidar button{
     height: 45px;
-    width: 170px;
+    /*width: 170px;*/
     margin-left: 70px;
     border-radius: 3px;
     background-color: #5a8bd6;
     color: #fff;
-    text-align: right;
+    /*text-align: right;*/
     font-weight: 800;
+    /*padding-right: 10px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btnValidar button span {
     padding-right: 10px;
 }
+
+.btnValidar button:hover{
+    transform: scale(1.05);
+    background-color: #2a5fad;
+}
+.btnValidar button:active{
+    background-color: #0a2c5f;
+}
+
+
+
+
 
