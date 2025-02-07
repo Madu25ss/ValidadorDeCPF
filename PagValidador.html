@@ -9,21 +9,51 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
 
     <title>Validador de CPF</title>
-    <link rel="icon" href="/imgsIcons/iconNav.svg">
+    <link rel="icon" href="./imgsIcons/iconNav.svg">
 
 </head>
 <body>
 
-    <section class="header" style="border: solid 2px red;">
-        <div class="containerHeader" style="border: solid 2px red;">
-            <div class="toggleList" style="border: solid 2px red;">menuToggle</div>
+    <section class="header">
+        <div class="containerHeader">
+            <div class="toggleList">
+                <i class="fa-solid fa-bars"></i>
+                <div class="hideContent">
+                    <p id="servicosTitulo">Serviços</p>
+                    <div class="servicos">
+                        <div>
+                            <a href="PagValidador.html">
+                                Validar CPF
+                            </a>
+                            <i class="fa-regular fa-heart"></i>
+                            <!--
+                            <i class="fa-solid fa-heart"></i>
+                            -->
+                        </div>
+                        <div>
+                            <a href="PagCriador.html">
+                                Criar CPF
+                            </a>
+                            <i class="fa-regular fa-heart"></i>
+                            <!--
+                            <i class="fa-solid fa-heart"></i>
+                            -->
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
             <div class="headerDireita">
-                <div class="favoritados" style="border: solid 2px red;">favoritados</div>
-                <div class="avatar" style="border: solid 2px red;">avatar</div>
+                <div class="favoritados">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="avatar">
+                    <i class="fa-solid fa-circle-user"></i>
+                </div>
             </div>
             
         </div>
@@ -45,21 +75,21 @@
 
                     <div class="resposta">
                         <!--icon e resposta
-                        -->
                         
-                        <!--
+                        <i class="fa-solid fa-check"></i>
                         <p>CPF VÁLIDO</p>
-                        <span class="material-symbols-outlined">done_all</span>
-                        <span class="material-symbols-outlined">close</span>
+
+                        <i class="fa-solid fa-xmark"></i>
                         <p>CPF INVÁLIDO</p>
                         -->
+                        
                     </div>
                 </div>
                 
 
                 <div class="btnValidar">
                     <button type="button">
-                        <span class="material-symbols-outlined">task_alt</span>
+                        <i class="fa-regular fa-circle-check"></i>
                         <p>VALIDAR CPF</p>
                     </button>
                 </div>
@@ -69,15 +99,18 @@
     </section>
 
     
-    <footer style="border: solid 2px red;">
+    <footer>
         <div class="githubDiv">
-            <i></i>
-            <p>GitHub</p>
+            <a href="https://github.com/Madu25ss">
+                <i class="fa-brands fa-square-github"></i>
+                <p>GitHub</p>
+            </a>
         </div>
         <div class="linkedinDiv">
-            <i></i>
-            <p>
-                LinkedIn</p>
+            <a href="https://www.linkedin.com/in/maria-eduarda-serpa-santos-29a6a5261/">
+                <i class="fa-brands fa-linkedin"></i>
+                <p>LinkedIn</p>
+            </a>
         </div>
     </footer>
     
@@ -85,5 +118,8 @@
 
 
     
+    <script src="https://kit.fontawesome.com/f3d1654ab8.js" 
+    crossorigin="anonymous"></script>
+    <script src="js/teste.js"></script>
 </body>
 </html>

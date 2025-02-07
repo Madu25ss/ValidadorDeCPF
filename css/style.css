@@ -39,11 +39,70 @@ body {
     padding: 1px;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+/*HEADER*/
+
+.avatar i, .favoritados i, .toggleList i{
+    color: #5a8bd6;
+    font-size: 35px;
+    margin: 3px 8px 0 4px;
 }
+.toggleList i{
+    margin-left: 10px;
+}
+
+.servicos i{
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.servicos div a{
+    display: inline;
+}
+
+.hideContent {
+    background-color: #fff;
+    width: 150px;
+    height: 100px;
+    padding: 10px 0 5px 5px;
+    display: none;
+    box-shadow: 0 12px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+
+
+.hideContent .servicos{
+    margin: 14px 0 0 10px;
+}
+
+.hideContent .servicos div{
+    margin-bottom: 10px;
+}
+
+.servicos div a{
+    text-decoration: none;
+    color: #000;
+}
+
+.hideContent p#servicosTitulo{
+    font-size: 14px;
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.678);
+
+}
+
+.favoritados {
+    /*
+    display: none;
+    */
+}
+
+.favoritados i{
+    cursor: pointer;
+    
+}
+
+
 
 /*conteudos*/
  .container .subtitulo{
@@ -126,20 +185,17 @@ hr {
 }
 
 .resposta p{
-    position: relative;
-    top: 6px;
     margin-left: 4px;
     font-size: 16px;
-    /*
-    color: #00cb07;
     color: #ec0000;
-    */
+    /*color: #00cb07; COR SE VÁLIDO*/
+    /*color: #ec0000; COR SE INVÁLIDO*/
 }
 
-.resposta span {
-    /*
+.resposta i{
     color: #ec0000;
-    */  
+    /*color: #00cb07; COR SE VÁLIDO*/
+    /*color: #ec0000; COR SE INVÁLIDO*/
     margin-left: 2px;
 }
 
@@ -175,6 +231,40 @@ hr {
 }
 .btnValidar button:active{
     background-color: #0a2c5f;
+}
+
+.btnValidar i{
+    color: #fff;
+    font-size: 20px;
+    margin: 0 8px 0 4px;
+}
+
+/*FOOTER*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer i{
+    font-size: 30px;
+    color: #3864a7;
+    text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+footer p{
+    display: inline;
+    text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer div{
+    margin: 0 0 5px 5px;
 }
 
 
